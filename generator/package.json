@@ -1,0 +1,26 @@
+{
+  "name": "unicode-emoji-dart",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfalcon90/unicode-emoji-dart.git"
+  },
+  "version": "1.0.3",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "generate": "tsc && node lib/index.js && dart format export/"
+  },
+  "dependencies": {
+    "emoji-regex": "^10.4.0",
+    "emojilib": "^4.0.0",
+    "emoji.json": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "typescript": "^5.1.3"
+  }
+}

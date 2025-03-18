@@ -1,0 +1,9 @@
+.packages
+pubspec.lock
+.dart_tool/
+
+generator/node_modules/
+generator/lib/
+generator/export/
+
+.DS_Store
