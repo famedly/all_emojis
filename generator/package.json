@@ -20,7 +20,7 @@
     "emoji.json": "^15.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.3.1",
+    "@types/node": "^22.13.10",
     "typescript": "^5.1.3"
   }
 }
