@@ -27,7 +27,7 @@ dependencies:
 import 'package:all_emojis/all_emojis.dart';
 
 // Get total number of available emojis
-print('Total emojis: ${emojis.length}'); // 1906 emojis
+print('Total emojis: ${emojis.length}'); // 5034 emojis
 
 // Access specific emoji and its metadata
 final heartEmoji = emojis['❤️']!;
