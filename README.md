@@ -27,10 +27,10 @@ dependencies:
 import 'package:all_emojis/all_emojis.dart';
 
 // Get total number of available emojis
-print('Total emojis: ${emojis.length}'); // 5034 emojis
+print('Total emojis: ${allEmojis.length}'); // 5034 emojis
 
 // Access specific emoji and its metadata
-final heartEmoji = emojis['❤️']!;
+final heartEmoji = allEmojis['❤️']!;
 print('Character: ${heartEmoji.char}');      // ❤️
 print('Name: ${heartEmoji.name}');           // red heart
 print('Keywords: ${heartEmoji.keywords}');    // [heart, love, ...]
@@ -42,13 +42,13 @@ print('Version: ${heartEmoji.emojiVersion}'); // 1.0
 
 ```dart
 // Get all food-related emojis
-final foodEmojis = emojis.values
+final foodEmojis = allEmojis.values
     .where((emoji) => emoji.keywords.contains('food'))
     .map((e) => e.char)
     .toList();
 
 // Search for emojis with multiple keywords
-final happyEmojis = emojis.values
+final happyEmojis = allEmojis.values
     .where((emoji) => emoji.keywords.any((k) => 
         k.contains('happy') || k.contains('joy') || k.contains('smile')))
     .map((e) => e.char)
@@ -59,7 +59,7 @@ final happyEmojis = emojis.values
 
 ```dart
 // Get animal emojis
-final animalEmojis = emojis.values
+final animalEmojis = allEmojis.values
     .where((emoji) => emoji.group == EmojiGroup.animalsNature)
     .map((e) => e.char)
     .take(5)

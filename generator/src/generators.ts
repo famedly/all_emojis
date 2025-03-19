@@ -74,7 +74,7 @@ export function generateEmojiList(
     str += `  ${generateEmojiInstance(fields, value)},\n`;
   }
 
-  return `final emojis = <String, Emoji>{
+  return `final allEmojis = <String, Emoji>{
 ${str}
   };`;
 }

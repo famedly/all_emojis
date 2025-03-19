@@ -33,7 +33,7 @@ typedef Emoji = ({
   String subgroup,
 });
 
-final emojis = <String, Emoji>{
+final allEmojis = <String, Emoji>{
   "😀": (
     char: "😀",
     keywords: [
