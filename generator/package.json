@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "emoji-regex": "^10.4.0",
-    "emojilib": "^4.0.1",
+    "emojilib": "^4.0.2",
     "emoji.json": "^15.1.0"
   },
   "devDependencies": {
